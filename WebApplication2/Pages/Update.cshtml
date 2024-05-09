@@ -1,0 +1,23 @@
+﻿@page
+@model WebApplication2.Pages.UpdateModel
+@{
+}
+
+
+<form method = "post">
+	<input type = "text" asp-for ="@Model.u.Fname" placeholder = "first name" value = "@Model.u.Fname">
+	<input type = "text" asp-for ="@Model.u.Lname" placeholder = "Second name" value = "@Model.u.Lname">
+	<input type = "text" asp-for ="@Model.u.Email" placeholder = "Email" value = "@Model.u.Email">
+
+	<br>
+
+	<label>Male</label>
+	<input type ="radio"  asp-for ="@Model.u.Gender" value = "Male">
+	<label>Female</label>
+	<input type ="radio"  asp-for ="@Model.u.Gender" value = "Female">
+
+	<button class="btn btn-primary" type ="submit"> Update user user </button>
+
+
+
+</form>
